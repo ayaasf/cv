@@ -1,0 +1,66 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:white ;
+    color: #6F4E37;
+}
+
+/* Header styles */
+header {
+    background-color:	#C19A6B
+
+    ;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Section styles */
+section {
+    margin: 80px;
+    padding: 20px;
+    background-color:#EADDCA ;
+    border-radius: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+img{
+    border-radius: 50%;
+}
+
+/* Paragraph styles */
+footer {
+    margin-left: 25% ;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing : border-box;
+    font-family : sans-serf;
+}
+a:link, a:visited {
+    background-color: #EADDCA;
+    color: black;
+   padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+  a:hover, a:active {
+    background-color: #C19A6B;
+    color: #EADDCA;
+  }  
+   
