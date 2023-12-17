@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>  
-    <title>Contact - Mon CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Formulaire de Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,22 +16,25 @@
         
     </header>
     <section>
-        <h1> Me Contacter</h1>
-       
-      
-<form action="/action_page.php">
-   <br> <label for="nom">Nom :</label><br>
-    <input type="text"  name="nom" ><br>
-    <label for="prenom">Prenom</label><br>
-    <input type="text"  name="prenom" ><br>
-    <label for="email">Email :</label><br>
-    <input type="email" name="email" ><br>
-    <label for="num">Numero :</label><br>
-    <input type="number"  name="num" ><br>
-    <label for="Message">Message :</label><br>
-    <textarea id="comment" name="Message" rows="7" ></textarea><br></br>
+        <h1>Me Contacter</h1>
 
-<a href="default.asp" target="_blank">Envoyer</a>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="num">Numéro :</label>
+            <input type="text" id="num" name="num" pattern="\d{8}" title="Le numéro doit avoir 8 chiffres" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="7" required></textarea>
+
+            <button type="submit">Envoyer</button>
     
   </form> 
     </section>
@@ -52,6 +57,7 @@
             
         </p>
     </footer>
+    <script src="Untitled-1.js"></script>
 </body>
 </html>
 
